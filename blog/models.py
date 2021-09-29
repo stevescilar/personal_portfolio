@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Post(models.Model):
-    title = models.CharField(max_length=100)
-    body = models.CharField(max_length=250)
+    title = models.CharField(max_length=200)
+    body = models.TextField()
     image =  models.ImageField(upload_to='blog/images/')
+    #date = models.DateField()
