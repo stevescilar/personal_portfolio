@@ -1,5 +1,13 @@
 <h1>Hi welcome to my Playground</h1>
 
+{% load static %}
+<a href="{% url 'blog:main_blogs' %}">Blog</a>
+<br>
+<a href="{% static 'portfolio/annah.pdf' %}">Resume</a>
+<br>
+<img src="{% static 'portfolio/adv_ert.jpg'%}" alt=""height="200">
+<br>
+
 {% for project in projects %}
 
 <h3>{{ project.title }}</h3>

@@ -1,8 +1,8 @@
 <h2>Repair Blog</h2>
-<p>Lorem ipsum dolor sit amet.</p>
+<p><b> Muambi has written {{blogs.count }} Blog{{ blogs.count|pluralize }}</b></p>
 {% for blog in blogs %}
 
-<h2>{{ blog.title }}</h2>
+<a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
 <p>{{ blog.body}}</p>
 <h4>{{ blog.date}}</h4>
 
