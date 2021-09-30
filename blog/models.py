@@ -6,3 +6,9 @@ class Post(models.Model):
     body = models.TextField()
     image =  models.ImageField(upload_to='blog/images/')
     #date = models.DateField()
+
+class Blog(models.Model):
+    title = models.CharField(max_length=100)
+    body = models.TextField()
+    date = models.DateField()
+    

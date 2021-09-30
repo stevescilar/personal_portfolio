@@ -1,0 +1,9 @@
+<h2>Repair Blog</h2>
+<p>Lorem ipsum dolor sit amet.</p>
+{% for blog in blogs %}
+
+<h2>{{ blog.title }}</h2>
+<p>{{ blog.body}}</p>
+<h4>{{ blog.date}}</h4>
+
+{% endfor %}
