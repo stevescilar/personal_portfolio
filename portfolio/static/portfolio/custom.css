@@ -11,12 +11,12 @@ body {
 }
 
 #blogtitle {
-    font-size: 6rem;
+    font-size: 2rem;
 }
 
 @media (min-width: 992px) {
     #hometext {
-        font-size: 4rem;
+        font-size: 2rem;
     }
     #blogdetailtitle {
         font-size: 5rem;
