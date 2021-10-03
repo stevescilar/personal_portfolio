@@ -1,0 +1,8 @@
+<h1>blogs center</h1>
+{% for post in posts %}
+
+<h2>{{ post.title }}</h2>
+<p>{{ post.body }}</p>
+<img src="{{ post.image.url}}" alt="" height="200" width="200">
+
+{% endfor %}
